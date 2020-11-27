@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:background="#AAAAAA"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="#AAAAAA"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ドロイド君"
+        android:textAppearance="AppCompat.Title"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2008年9月23日"
+        android:textAppearance="AppCompat.Subhead"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="カルフォルニア州 マウンテンビュー"
+        android:textAppearance="AppCompat.Subhead"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="523dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="16pb"
+            android:layout_marginHorizontal="16pb"
+            android:layout_marginVertical="16pb"
+            android:text="Androidスマートフォン向けのプラットフォームです。\n現在、世界ナンバーワンのシェアを誇っています。\n日本では「ドロイド君」と呼ばれる彼は、正式名称をbugdroid（バグドロイド）と言います。ドロイド君の方が可愛いですね（笑）\nそんな彼も10歳になりました。今後とも宜しくお願いします。"
+            android:textAppearance="AppCompat.Headline"
+            android:textSize="18sp" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
